@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Generator — Excuse.exe</title>
+<meta name="description" content="Pick a situation, pick a style, and generate your excuse. Or let Chaos Mode decide for you." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="generator">
+
+  <!-- ============================= NAV ============================= -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">😂 EXCUSE.EXE</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home">Home</a></li>
+        <li><a href="generator.html" data-page="generator">Generator</a></li>
+        <li><a href="generator.html#saved" data-page="saved">My Excuses</a></li>
+        <li><a href="about.html" data-page="about">About</a></li>
+      </ul>
+      <a href="generator.html" class="btn btn-primary btn-small nav-cta">Generate Excuse 😂</a>
+    </div>
+  </nav>
+
+  <main class="container section">
+
+    <!-- ============================= TAB SWITCHER ============================= -->
+    <div class="tab-bar">
+      <button class="tab-btn is-active" type="button" data-tab-target="generator">🎲 Generator</button>
+      <button class="tab-btn" type="button" data-tab-target="saved">❤️ My Excuses</button>
+    </div>
+
+    <!-- ============================= GENERATOR TAB ============================= -->
+    <div data-tab-panel="generator">
+
+      <!-- Step 1: situation -->
+      <div class="gen-step">
+        <span class="gen-step-label">STEP 1 — Choose your situation</span>
+        <div class="choice-grid" data-situation-grid>
+          <div class="choice-card" data-situation="wakeup">
+            <span class="choice-emoji">😴</span>
+            <span class="choice-label">I woke up late</span>
+          </div>
+          <div class="choice-card" data-situation="assignment">
+            <span class="choice-emoji">📚</span>
+            <span class="choice-label">I didn't complete my assignment</span>
+          </div>
+          <div class="choice-card" data-situation="lateClass">
+            <span class="choice-emoji">🏫</span>
+            <span class="choice-label">I am late to class</span>
+          </div>
+          <div class="choice-card" data-situation="noReply">
+            <span class="choice-emoji">📱</span>
+            <span class="choice-label">I didn't reply to my friend</span>
+          </div>
+          <div class="choice-card" data-situation="projectUnfinished">
+            <span class="choice-emoji">💻</span>
+            <span class="choice-label">My project isn't finished</span>
+          </div>
+          <div class="choice-card" data-situation="missedMeeting">
+            <span class="choice-emoji">🤝</span>
+            <span class="choice-label">I missed a meeting</span>
+          </div>
+          <div class="choice-card" data-situation="forgotSomething">
+            <span class="choice-emoji">📝</span>
+            <span class="choice-label">I forgot something important</span>
+          </div>
+          <div class="choice-card" data-situation="leaveEarly">
+            <span class="choice-emoji">🚶</span>
+            <span class="choice-label">I need to leave early</span>
+          </div>
+          <div class="choice-card" data-situation="failedTest">
+            <span class="choice-emoji">😭</span>
+            <span class="choice-label">I failed a test</span>
+          </div>
+          <div class="choice-card" data-situation="random">
+            <span class="choice-emoji">🎲</span>
+            <span class="choice-label">Random situation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: style -->
+      <div class="gen-step">
+        <span class="gen-step-label">STEP 2 — Choose your style</span>
+        <div class="choice-grid styles" data-style-grid>
+          <div class="choice-card" data-style="normal">
+            <span class="choice-emoji">😇</span>
+            <span class="choice-label">Normal</span>
+            <span class="choice-sub">Simple and somewhat believable</span>
+          </div>
+          <div class="choice-card" data-style="funny">
+            <span class="choice-emoji">😂</span>
+            <span class="choice-label">Funny</span>
+            <span class="choice-sub">Creative and humorous</span>
+          </div>
+          <div class="choice-card" data-style="savage">
+            <span class="choice-emoji">💀</span>
+            <span class="choice-label">Savage</span>
+            <span class="choice-sub">Bold and sarcastic</span>
+          </div>
+          <div class="choice-card" data-style="random">
+            <span class="choice-emoji">🎲</span>
+            <span class="choice-label">Random</span>
+            <span class="choice-sub">Completely unpredictable</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3: generate -->
+      <div class="gen-step">
+        <span class="gen-step-label">STEP 3 — Generate</span>
+        <div class="generate-row">
+          <button class="btn btn-primary btn-large" type="button" data-generate-btn>GENERATE EXCUSE 😂</button>
+        </div>
+        <p class="form-error" data-form-error hidden></p>
+      </div>
+
+      <!-- Loading sequence -->
+      <div class="window loading-box" data-loading hidden>
+        <p class="loading-line">Consulting the excuse department... 🤖</p>
+      </div>
+
+      <!-- Result card -->
+      <div class="window result-card" data-result hidden>
+        <div class="window-titlebar">
+          <span class="window-dot pink"></span>
+          <span class="window-dot yellow"></span>
+          <span class="window-dot mint"></span>
+          <span class="window-titlebar-label">result.exe</span>
+        </div>
+        <div class="window-body">
+          <span class="result-tag" data-result-tag></span>
+          <h2>YOUR EXCUSE 😂</h2>
+          <p class="result-text" data-result-text></p>
+
+          <div class="rating-row">
+            <div class="rating-item">
+              <span class="rating-item-label">Creativity</span>
+              <span class="rating-item-value" data-result-creativity></span>
+            </div>
+            <div class="rating-item">
+              <span class="rating-item-label">Believability</span>
+              <span class="rating-item-value" data-result-believability></span>
+            </div>
+            <div class="rating-item">
+              <span class="rating-item-label">Danger Level</span>
+              <span class="rating-item-value" data-result-danger></span>
+            </div>
+          </div>
+
+          <p class="result-verdict" data-result-verdict></p>
+
+          <div class="result-actions">
+            <button class="btn btn-secondary" type="button" data-copy-btn>📋 Copy Excuse</button>
+            <button class="btn btn-secondary" type="button" data-retry-btn>🔄 Try Another</button>
+            <button class="btn btn-secondary" type="button" data-save-btn>❤️ Save</button>
+            <button class="btn btn-secondary" type="button" data-share-btn>📤 Share</button>
+          </div>
+          <p class="copy-status" data-copy-status hidden></p>
+        </div>
+      </div>
+
+      <!-- Chaos mode -->
+      <div class="section" id="chaos">
+        <div class="window chaos-window" style="max-width: 640px; margin: 0 auto;">
+          <div class="window-titlebar">
+            <span class="window-dot pink"></span>
+            <span class="window-dot yellow"></span>
+            <span class="window-dot mint"></span>
+            <span class="window-titlebar-label">chaos_mode.exe</span>
+          </div>
+          <div class="window-body">
+            <h2>🎲 CHAOS MODE</h2>
+            <p>Don't choose anything. Let the computer decide your fate.</p>
+            <button class="btn btn-primary btn-large" type="button" data-chaos-btn>SURPRISE ME 😂</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================= MY EXCUSES TAB ============================= -->
+    <div data-tab-panel="saved" hidden>
+      <div class="section-heading" style="text-align:left; margin-bottom: 24px;">
+        <h2>❤️ My Saved Excuses</h2>
+        <p>Every excuse you save with the ❤️ button on a result card shows up here, stored right in your browser.</p>
+      </div>
+      <p class="saved-empty" data-saved-empty>Nothing saved yet — go generate something worth keeping. 😂</p>
+      <ul class="saved-list" data-saved-list></ul>
+    </div>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer container">
+    <p>😂 EXCUSE.EXE — "You have the problem. We have the excuse."</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

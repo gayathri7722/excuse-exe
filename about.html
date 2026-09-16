@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Excuse.exe</title>
+<meta name="description" content="What Excuse.exe is, how it works, and what's coming next." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="about">
+
+  <!-- ============================= NAV ============================= -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">😂 EXCUSE.EXE</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home">Home</a></li>
+        <li><a href="generator.html" data-page="generator">Generator</a></li>
+        <li><a href="generator.html#saved" data-page="saved">My Excuses</a></li>
+        <li><a href="about.html" data-page="about">About</a></li>
+      </ul>
+      <a href="generator.html" class="btn btn-primary btn-small nav-cta">Generate Excuse 😂</a>
+    </div>
+  </nav>
+
+  <main class="container section">
+    <div class="window about-window">
+      <div class="window-titlebar">
+        <span class="window-dot pink"></span>
+        <span class="window-dot yellow"></span>
+        <span class="window-dot mint"></span>
+        <span class="window-titlebar-label">about.exe</span>
+      </div>
+      <div class="window-body">
+        <h1>What is Excuse.exe?</h1>
+        <p>Excuse.exe is a fun web project created to generate creative excuses for everyday situations. It's mainly designed for entertainment and learning — pick a situation, pick a style, and get a ready-made excuse in seconds.</p>
+        <p>Everything runs locally in your browser: the excuse database is a set of hand-written JavaScript arrays, ratings are generated on the fly, and anything you save lives in your browser's storage. No accounts, no server, no external AI API required for this version.</p>
+        <p class="about-tagline">Built for fun. Built with care. Built to make you laugh. 😂</p>
+
+        <h2 style="margin-top:40px;">Under the hood</h2>
+        <div class="about-grid">
+          <div class="step-card">
+            <span class="step-index">FRONTEND</span>
+            <p>HTML, CSS, and vanilla JavaScript — no build step, no framework, just open it in a browser.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-index">DATA</span>
+            <p>50+ hand-written excuses organized by situation and style, kept in <code>data/excuses.json</code> and mirrored inline in <code>script.js</code>.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-index">STORAGE</span>
+            <p>Saved excuses use <code>localStorage</code> — nothing leaves your device.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-index">FUTURE</span>
+            <p>Designed so a Python Flask API can later slot in behind an <code>/api/generate</code> endpoint. See the README for the plan.</p>
+          </div>
+        </div>
+
+        <h2 style="margin-top:40px;">Content policy</h2>
+        <p>Every excuse in the database is written to be harmless and silly. Nothing here is meant to encourage dishonesty that causes real harm, cover up serious problems, or suggest anything dangerous or illegal — it's a joke generator for small everyday moments, not a tool for getting out of anything that actually matters.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer container">
+    <p>😂 EXCUSE.EXE — "You have the problem. We have the excuse."</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

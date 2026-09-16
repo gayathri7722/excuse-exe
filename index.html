@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Excuse.exe — You have the problem. We have the excuse.</title>
+<meta name="description" content="Excuse.exe generates creative, funny excuses for everyday student problems. No AI needed, just pick a situation and a style." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+
+  <!-- ============================= NAV ============================= -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">😂 EXCUSE.EXE</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home">Home</a></li>
+        <li><a href="generator.html" data-page="generator">Generator</a></li>
+        <li><a href="generator.html#saved" data-page="saved">My Excuses</a></li>
+        <li><a href="about.html" data-page="about">About</a></li>
+      </ul>
+      <a href="generator.html" class="btn btn-primary btn-small nav-cta">Generate Excuse 😂</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============================= HERO ============================= -->
+    <section class="hero container">
+      <span class="hero-tagline">"You have the problem. We have the excuse. 😂"</span>
+      <h1>Got a Problem? Get an Excuse!</h1>
+      <p class="hero-subtitle">Because sometimes the truth needs a little creativity. 😂</p>
+      <div class="hero-actions">
+        <a href="generator.html" class="btn btn-primary btn-large">GENERATE MY EXCUSE 🎲</a>
+      </div>
+    </section>
+
+    <!-- ============================= HOW IT WORKS ============================= -->
+    <section class="section container">
+      <div class="section-heading">
+        <h2>How does it work?</h2>
+      </div>
+      <div class="steps">
+        <div class="step-card">
+          <span class="step-index">01</span>
+          <p>Choose your situation</p>
+        </div>
+        <div class="step-card">
+          <span class="step-index">02</span>
+          <p>Choose your excuse style</p>
+        </div>
+        <div class="step-card">
+          <span class="step-index">03</span>
+          <p>Generate your excuse</p>
+        </div>
+        <div class="step-card">
+          <span class="step-index">04</span>
+          <p>Laugh, copy, and share 😂</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= EXCUSE OF THE DAY ============================= -->
+    <section class="section container">
+      <div class="section-heading">
+        <h2>🌟 Excuse of the Day</h2>
+        <p>One fresh excuse, refreshed daily. On the house.</p>
+      </div>
+      <div class="window eod-card" style="max-width: 560px; margin: 0 auto;" data-excuse-of-day>
+        <div class="window-titlebar">
+          <span class="window-dot pink"></span>
+          <span class="window-dot yellow"></span>
+          <span class="window-dot mint"></span>
+          <span class="window-titlebar-label">today.exe</span>
+        </div>
+        <div class="window-body">
+          <span class="eod-emoji">😂</span>
+          <span class="eod-situation">Loading...</span>
+          <p class="eod-text">"..."</p>
+          <button class="btn btn-secondary" type="button" data-eod-copy>📋 Copy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= FUNNY STATISTICS ============================= -->
+    <section class="section container">
+      <div class="section-heading">
+        <h2>Funny Statistics</h2>
+        <p>Demo numbers for demo purposes — nobody's actually been saved by a computer. Yet.</p>
+      </div>
+      <div class="stats">
+        <div class="stat-card">
+          <span class="stat-number" data-count-to="12482">0</span>
+          <span class="stat-label">😂 Excuses Generated</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count-to="3921">0</span>
+          <span class="stat-label">💀 Students Saved</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count-to="2184">0</span>
+          <span class="stat-label">🔥 Dangerous Excuses</span>
+        </div>
+      </div>
+      <p class="stats-note">*Demo data for illustration only — not real user counts.</p>
+    </section>
+
+    <!-- ============================= CHAOS MODE TEASER ============================= -->
+    <section class="section container">
+      <div class="window chaos-window" style="max-width: 640px; margin: 0 auto;">
+        <div class="window-titlebar">
+          <span class="window-dot pink"></span>
+          <span class="window-dot yellow"></span>
+          <span class="window-dot mint"></span>
+          <span class="window-titlebar-label">chaos_mode.exe</span>
+        </div>
+        <div class="window-body">
+          <h2>🎲 CHAOS MODE</h2>
+          <p>Don't choose anything. Let the computer decide your fate.</p>
+          <a href="generator.html#chaos" class="btn btn-primary btn-large">SURPRISE ME 😂</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer container">
+    <p>😂 EXCUSE.EXE — "You have the problem. We have the excuse."</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

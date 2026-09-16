@@ -1,0 +1,147 @@
+{
+  "_note": "Source data for Excuse.exe. Kept as a standalone file for a future Flask backend to read directly. The live site currently uses the identical copy embedded in script.js so it works with zero server setup.",
+  "wakeup": {
+    "label": "I woke up late",
+    "emoji": "😴",
+    "normal": [
+      "My alarm went off, but I genuinely don't remember turning it off.",
+      "I stayed up finishing something important and my body vetoed the morning."
+    ],
+    "funny": [
+      "My alarm and I had a disagreement. The alarm won, but I still didn't wake up.",
+      "I was having a very productive dream and refused to log off."
+    ],
+    "savage": [
+      "Mornings and I are not on speaking terms. Haven't been for years.",
+      "I woke up on time. I simply chose violence and went back to sleep."
+    ]
+  },
+  "assignment": {
+    "label": "I didn't complete my assignment",
+    "emoji": "📚",
+    "normal": [
+      "I had a technical problem while completing the assignment.",
+      "I ran out of time after some things came up that I couldn't move."
+    ],
+    "funny": [
+      "My laptop was working perfectly, but unfortunately I wasn't.",
+      "I completed the assignment mentally. Unfortunately, my laptop didn't receive the information."
+    ],
+    "savage": [
+      "I planned to finish it yesterday. Yesterday me had other plans.",
+      "The assignment and my motivation never actually met each other."
+    ]
+  },
+  "lateClass": {
+    "label": "I am late to class",
+    "emoji": "🏫",
+    "normal": [
+      "There was more traffic than usual on the way here.",
+      "I got held up right as I was about to leave."
+    ],
+    "funny": [
+      "I was on time in a parallel universe. This is just not that one.",
+      "My feet started walking here, my brain stayed in bed. We're not synced yet."
+    ],
+    "savage": [
+      "Punctuality and I broke up a while ago. It's amicable.",
+      "I arrive when I arrive. Today that happens to be now-ish."
+    ]
+  },
+  "noReply": {
+    "label": "I didn't reply to my friend",
+    "emoji": "📱",
+    "normal": [
+      "I saw the message and meant to reply, then completely lost track of time.",
+      "My phone was on silent and I genuinely didn't notice it come in."
+    ],
+    "funny": [
+      "I read it, mentally replied a great response, and never actually typed it.",
+      "Your text is currently trapped in my draft folder, which is basically a black hole."
+    ],
+    "savage": [
+      "I don't reply fast. I reply eventually. There's a difference.",
+      "Read receipts are a trap I refuse to fall into on principle."
+    ]
+  },
+  "projectUnfinished": {
+    "label": "My project isn't finished",
+    "emoji": "💻",
+    "normal": [
+      "I hit a technical issue late in the process that set me back.",
+      "A key part took longer to figure out than I expected."
+    ],
+    "funny": [
+      "The project is 90% done. Unfortunately the last 10% is 90% of the work.",
+      "It compiles in my head perfectly. The computer just refuses to agree."
+    ],
+    "savage": [
+      "Deadlines are more of a suggestion in my creative process.",
+      "The project isn't late. It's just running on its own schedule."
+    ]
+  },
+  "missedMeeting": {
+    "label": "I missed a meeting",
+    "emoji": "🤝",
+    "normal": [
+      "I had a scheduling mix-up and completely missed the invite.",
+      "Something urgent came up right before it started."
+    ],
+    "funny": [
+      "The meeting was on my calendar. My calendar and I don't talk much.",
+      "I was mentally present. Physically, I was somewhere else entirely."
+    ],
+    "savage": [
+      "If it could've been an email, I already knew that before it started.",
+      "I attend meetings selectively. This one didn't make the cut."
+    ]
+  },
+  "forgotSomething": {
+    "label": "I forgot something important",
+    "emoji": "📝",
+    "normal": [
+      "It slipped my mind with everything else going on today.",
+      "I meant to write it down and then completely forgot to."
+    ],
+    "funny": [
+      "My memory works on a first-in, first-out basis, and that got pushed out.",
+      "I remembered everything except the one thing that actually mattered."
+    ],
+    "savage": [
+      "My brain has limited storage and it made an executive decision.",
+      "I didn't forget. I deprioritized it without telling you."
+    ]
+  },
+  "leaveEarly": {
+    "label": "I need to leave early",
+    "emoji": "🚶",
+    "normal": [
+      "Something came up that I need to take care of.",
+      "I have somewhere else I need to be shortly."
+    ],
+    "funny": [
+      "My legs made the decision to leave before my brain approved it.",
+      "I'm not leaving early, I'm just arriving early somewhere else."
+    ],
+    "savage": [
+      "I've mentally left already. My body is just catching up.",
+      "I gave this exactly as much time as I intended to."
+    ]
+  },
+  "failedTest": {
+    "label": "I failed a test",
+    "emoji": "😭",
+    "normal": [
+      "I studied the wrong material and it didn't line up with the test.",
+      "I ran out of time on the sections I actually knew well."
+    ],
+    "funny": [
+      "The test and I had very different ideas about what the material was.",
+      "I passed the vibe check. The actual test, less so."
+    ],
+    "savage": [
+      "The test failed to capture my full potential. That's on the test.",
+      "I don't fail tests, I just collect unconventional results."
+    ]
+  }
+}
